@@ -1,0 +1,2 @@
+model,mean_best_val_accuracy,std_best_val_accuracy,mean_best_val_loss,std_best_val_loss,mean_final_val_accuracy,std_final_val_accuracy,mean_final_val_loss,std_final_val_loss
+V2_BatchNorm,0.9266666666666665,0.0004965156369921997,0.22009020742177965,0.007146038034909748,0.9240166666666667,0.0023902289523065443,0.4709764357457559,0.02721296658293933

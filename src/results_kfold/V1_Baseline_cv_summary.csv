@@ -1,0 +1,2 @@
+model,mean_best_val_accuracy,std_best_val_accuracy,mean_best_val_loss,std_best_val_loss,mean_final_val_accuracy,std_final_val_accuracy,mean_final_val_loss,std_final_val_loss
+V1_Baseline,0.9263166666666667,0.0014208272238382899,0.22229291973511378,0.005031546058898596,0.9238666666666667,0.0016035983841902822,0.48867179194440447,0.030444280402215255

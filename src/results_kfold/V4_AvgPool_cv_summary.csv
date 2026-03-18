@@ -1,0 +1,2 @@
+model,mean_best_val_accuracy,std_best_val_accuracy,mean_best_val_loss,std_best_val_loss,mean_final_val_accuracy,std_final_val_accuracy,mean_final_val_loss,std_final_val_loss
+V4_AvgPool,0.9296,0.0018813780410468525,0.2170071137626966,0.006174851226427993,0.9259166666666665,0.001808544534517545,0.3711268000125885,0.03127929122801033

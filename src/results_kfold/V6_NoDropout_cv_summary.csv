@@ -1,0 +1,2 @@
+model,mean_best_val_accuracy,std_best_val_accuracy,mean_best_val_loss,std_best_val_loss,mean_final_val_accuracy,std_final_val_accuracy,mean_final_val_loss,std_final_val_loss
+V6_NoDropout,0.9234166666666667,0.0013346347815039003,0.22704225859642024,0.009794156074986666,0.9168000000000001,0.0028647765086380673,0.6945328628162544,0.013959163461489574

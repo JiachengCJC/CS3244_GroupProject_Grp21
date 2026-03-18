@@ -1,0 +1,2 @@
+model,mean_best_val_accuracy,std_best_val_accuracy,mean_best_val_loss,std_best_val_loss,mean_final_val_accuracy,std_final_val_accuracy,mean_final_val_loss,std_final_val_loss
+V5_GELU,0.92675,0.001771690968789114,0.22225587032238642,0.00621910996219043,0.9232166666666666,0.002093807005857439,0.5147993256255984,0.020061478764140113

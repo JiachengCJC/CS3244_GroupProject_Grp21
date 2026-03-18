@@ -1,0 +1,2 @@
+model,mean_best_val_accuracy,std_best_val_accuracy,mean_best_val_loss,std_best_val_loss,mean_final_val_accuracy,std_final_val_accuracy,mean_final_val_loss,std_final_val_loss
+V3_LargerKernel,0.9245333333333333,0.0016505470473620512,0.2282847482204437,0.009824662055285685,0.9212666666666667,0.0021645823307665135,0.5779319997889301,0.023238175459953242

@@ -1,0 +1,2 @@
+model,mean_best_val_accuracy,std_best_val_accuracy,mean_best_val_loss,std_best_val_loss,mean_final_val_accuracy,std_final_val_accuracy,mean_final_val_loss,std_final_val_loss
+V7_Deeper,0.9198333333333334,0.0035399505646265873,0.23539886272748314,0.010551892747149846,0.9142666666666667,0.004412498032734839,0.508983926996837,0.03542172470362714

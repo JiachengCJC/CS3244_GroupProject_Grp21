@@ -1,0 +1,2 @@
+model,mean_best_val_accuracy,std_best_val_accuracy,mean_best_val_loss,std_best_val_loss,mean_final_val_accuracy,std_final_val_accuracy,mean_final_val_loss,std_final_val_loss
+transformer_v3,0.9052833333333334,0.003781166780535123,0.288409651406606,0.011903431231526863,0.9009333333333334,0.0035572695521518677,0.3128658086975415,0.005486218766117237
