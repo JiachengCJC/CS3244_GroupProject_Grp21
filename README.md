@@ -198,5 +198,33 @@ We used a compact configuration with embedding dimension 64, 4 attention heads, 
 
 ---
 
+# Analysis
+For my individual component, I focused on deep learning methods, specifically Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs), for Fashion-MNIST classification.
+
+For the CNN part, I developed and tested seven model variants by modifying key architec-tural choices such as kernel size, pooling type, and activation function. One challenge was that several variants achieved very similar performance, making it difficult to determine whether the differences were due to actual architectural improvements or randomness in the data split. To address this, I relied on mean cross-validation performance across folds in- stead of judging models based on a single run. Based on the training summary, V4 AvgPool achieved the best overall validation accuracy and validation loss, suggesting that average pooling may preserve the overall shape of clothing items better than max pooling for this
+dataset. However, the performance gap between models was small, so this remains a tentative conclusion rather than a final one. I also noticed that Fold 3 often produced the strongest results across models, even with a fixed random seed, which may indicate that this fold happened to have a slightly more favorable validation distribution.
+
+## Plots for CNN model
+![val_acc](./images/cnn_mean_best_val_acc.png)
+![val_loss](./images/cnn_mean_best_val_loss.png)
+
+
+For the transformer part, I implemented three Vision Transformer variants with different
+embedding dimensions, numbers of attention heads, encoder layers, and MLP dimensions. I
+first built a compact baseline model and then created smaller and larger variants by changing only a few hyperparameters, allowing for a clearer comparison of model scale.
+
+## Performance Results
+
+| Model | Configuration | Mean Best Validation Accuracy (%) | Mean Best Validation Loss | Key Observation |
+| :--- | :--- | :--- | :--- | :--- |
+| **Transformer_v1** | EMBED_DIM=64, <br>NUM_HEADS=4, <br>NUM_LAYERS=4, <br>MLP_DIM=128 | 90.4749 | 0.2793 | Lowest validation loss |
+| **Transformer_v2** | EMBED_DIM=32, <br>NUM_HEADS=2, <br>NUM_LAYERS=2, <br>MLP_DIM=64 | 88.6017 | 0.3111 | Lowest-performing configuration |
+| **Transformer_v3** | EMBED_DIM=128, <br>NUM_HEADS=8, <br>NUM_LAYERS=6, <br>MLP_DIM=256 | 90.5283 | 0.2884 | Highest validation accuracy |
+
+> Comparison of Vision Transformer variants on Fashion-MNIST.
+
+At this stage, my interpretation is that CNNs are likely more suitable for a relatively small dataset such as Fashion-MNIST, since convolutional layers have a stronger built-in inductive bias for local patterns, while ViTs are typically more competitive when trained or pretrained on much larger datasets. Overall, my individual contribution provides a structured comparison between CNN-based and transformer-based approaches. The CNN models currently show the strongest and most consistent performance, with V4 AvgPool emerging as the best-performing CNN variant based on cross-validation. The transformer models are still under evaluation, and final conclusions will depend on the held-out test set results. Moving forward, I will combine the cross-validation findings with test accuracy, test loss, per-class precision, recall, F1-score, and confusion matrices so that the final report can present both overall model comparison and class-level error patterns clearly.
+
+---
 Written by `Chung Jia Cheng`
 
