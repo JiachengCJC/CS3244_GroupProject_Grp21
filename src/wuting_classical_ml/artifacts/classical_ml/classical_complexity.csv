@@ -1,0 +1,14 @@
+model,metric,value
+Logistic Regression,pca_dims,184
+Logistic Regression,n_params,1850
+Logistic Regression,coef_shape,"[10, 184]"
+Logistic Regression,n_iter,1000
+SVM (RBF),pca_dims,184
+SVM (RBF),n_support_vectors,817
+SVM (RBF),sv_per_class,"[91, 35, 93, 75, 85, 99, 110, 65, 93, 71]"
+Random Forest,pca_dims,184
+Random Forest,n_trees,300
+Random Forest,mean_depth,17.18
+Random Forest,max_depth,28
+Random Forest,total_nodes,139564
+Random Forest,mean_nodes,465.2133333333333

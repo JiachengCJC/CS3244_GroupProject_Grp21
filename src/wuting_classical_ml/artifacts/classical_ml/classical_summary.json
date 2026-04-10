@@ -1,0 +1,179 @@
+{
+  "Logistic Regression": {
+    "cv_pca_mean": 0.8,
+    "cv_pca_std": 0.020069324297987138,
+    "cv_pca_folds": [
+      0.8125,
+      0.8125,
+      0.7875,
+      0.8208333333333333,
+      0.7666666666666667
+    ],
+    "cv_pca_time_sec": 5.151309013366699,
+    "cv_nopca_mean": 0.8025,
+    "cv_nopca_std": 0.021666666666666664,
+    "cv_nopca_time_sec": 17.757678985595703,
+    "test_acc": 0.755,
+    "nopca_test_acc": 0.75,
+    "t_nopca_train": 20.29097580909729,
+    "top3": 0.9575,
+    "top5": 0.9875,
+    "macro_precision": 0.7633419202005741,
+    "macro_recall": 0.755,
+    "macro_f1": 0.7568886361189318,
+    "t_train": 14.352219820022583,
+    "t_infer": 0.0034220218658447266,
+    "hardest_pairs": [
+      {
+        "true_idx": 4,
+        "pred_idx": 6,
+        "true_class": "Coat",
+        "pred_class": "Shirt",
+        "count": 9
+      },
+      {
+        "true_idx": 3,
+        "pred_idx": 6,
+        "true_class": "Dress",
+        "pred_class": "Shirt",
+        "count": 7
+      },
+      {
+        "true_idx": 6,
+        "pred_idx": 0,
+        "true_class": "Shirt",
+        "pred_class": "T-shirt/Top",
+        "count": 7
+      }
+    ],
+    "complexity": {
+      "pca_dims": 184,
+      "n_params": 1850,
+      "coef_shape": [
+        10,
+        184
+      ],
+      "n_iter": 1000
+    }
+  },
+  "SVM (RBF)": {
+    "cv_pca_mean": 0.8183333333333334,
+    "cv_pca_std": 0.012527746981977424,
+    "cv_pca_folds": [
+      0.8208333333333333,
+      0.8333333333333334,
+      0.8291666666666667,
+      0.8,
+      0.8083333333333333
+    ],
+    "cv_pca_time_sec": 1.9988770484924316,
+    "cv_nopca_mean": null,
+    "cv_nopca_std": null,
+    "cv_nopca_time_sec": null,
+    "test_acc": 0.805,
+    "nopca_test_acc": null,
+    "t_nopca_train": null,
+    "top3": 0.9825,
+    "top5": 0.9975,
+    "macro_precision": 0.809306303347538,
+    "macro_recall": 0.805,
+    "macro_f1": 0.8059770268614116,
+    "t_train": 8.85306191444397,
+    "t_infer": 0.029186010360717773,
+    "hardest_pairs": [
+      {
+        "true_idx": 4,
+        "pred_idx": 6,
+        "true_class": "Coat",
+        "pred_class": "Shirt",
+        "count": 9
+      },
+      {
+        "true_idx": 6,
+        "pred_idx": 4,
+        "true_class": "Shirt",
+        "pred_class": "Coat",
+        "count": 7
+      },
+      {
+        "true_idx": 0,
+        "pred_idx": 6,
+        "true_class": "T-shirt/Top",
+        "pred_class": "Shirt",
+        "count": 7
+      }
+    ],
+    "complexity": {
+      "pca_dims": 184,
+      "n_support_vectors": 817,
+      "sv_per_class": [
+        91,
+        35,
+        93,
+        75,
+        85,
+        99,
+        110,
+        65,
+        93,
+        71
+      ]
+    }
+  },
+  "Random Forest": {
+    "cv_pca_mean": 0.8099999999999999,
+    "cv_pca_std": 0.019825628755617216,
+    "cv_pca_folds": [
+      0.7958333333333333,
+      0.825,
+      0.7916666666666666,
+      0.8416666666666667,
+      0.7958333333333333
+    ],
+    "cv_pca_time_sec": 2.31955623626709,
+    "cv_nopca_mean": 0.8200000000000001,
+    "cv_nopca_std": 0.021311186420907374,
+    "cv_nopca_time_sec": 1.0477020740509033,
+    "test_acc": 0.7825,
+    "nopca_test_acc": 0.785,
+    "t_nopca_train": 0.3265519142150879,
+    "top3": 0.9775,
+    "top5": 0.9925,
+    "macro_precision": 0.7766818870581708,
+    "macro_recall": 0.7825,
+    "macro_f1": 0.7786288818718036,
+    "t_train": 10.483320713043213,
+    "t_infer": 0.24789714813232422,
+    "hardest_pairs": [
+      {
+        "true_idx": 6,
+        "pred_idx": 4,
+        "true_class": "Shirt",
+        "pred_class": "Coat",
+        "count": 10
+      },
+      {
+        "true_idx": 6,
+        "pred_idx": 0,
+        "true_class": "Shirt",
+        "pred_class": "T-shirt/Top",
+        "count": 7
+      },
+      {
+        "true_idx": 4,
+        "pred_idx": 6,
+        "true_class": "Coat",
+        "pred_class": "Shirt",
+        "count": 7
+      }
+    ],
+    "complexity": {
+      "pca_dims": 184,
+      "n_trees": 300,
+      "mean_depth": 17.18,
+      "max_depth": 28,
+      "total_nodes": 139564,
+      "mean_nodes": 465.2133333333333
+    }
+  }
+}
