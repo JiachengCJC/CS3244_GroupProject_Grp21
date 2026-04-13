@@ -45,9 +45,9 @@ Same architecture as the baseline, with sparsity constraint:
 
 | Model | KNN Accuracy |
 |------|-------------|
-| Baseline Autoencoder | 84.6% |
-| Denoising Autoencoder | 78.8% |
-| Sparse Autoencoder | 57.8% |
+| Baseline Autoencoder | 84.4% |
+| Denoising Autoencoder | 82.2% |
+| Sparse Autoencoder | 74.8% |
 
 ---
 
